@@ -22,6 +22,7 @@ class RoutersViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         routersViewModel?.userLocation()
+        routersViewModel?.centerOnUser()
         print("Did Appear")
     }
     

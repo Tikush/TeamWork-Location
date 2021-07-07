@@ -42,6 +42,19 @@ class RoutersViewModel: NSObject, MKMapViewDelegate, CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
     }
     
+    func centerOnUser() {
+        guard let location = locationManager.location else { return }
+        let regionRadius: CLLocationDistance = 7_00
+
+        let region = MKCoordinateRegion(
+            center: location.coordinate,
+            latitudinalMeters: regionRadius,
+            longitudinalMeters: regionRadius
+        )
+        
+        mapView.setRegion(region, animated: true)
+    }
+    
     func startUpdatingLocation() {
         locationManager.startUpdatingLocation()
     }

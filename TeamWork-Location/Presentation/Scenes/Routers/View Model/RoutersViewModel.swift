@@ -39,7 +39,7 @@ class RoutersViewModel: NSObject, MKMapViewDelegate, CLLocationManagerDelegate {
     func configGesture() {
         let gesture = UILongPressGestureRecognizer(target: self.rootController,
                                              action: #selector(self.rootController.onTap))
-        gesture.minimumPressDuration = 1
+        gesture.minimumPressDuration = TimeInterval(1)
         mapView.isUserInteractionEnabled = true
         mapView.addGestureRecognizer(gesture)
     }
@@ -53,7 +53,7 @@ class RoutersViewModel: NSObject, MKMapViewDelegate, CLLocationManagerDelegate {
     
     func centerOnUser() {
         guard let location = locationManager.location else { return }
-        let regionRadius: CLLocationDistance = 7_00
+        let regionRadius: CLLocationDistance = 8_00
 
         let region = MKCoordinateRegion(
             center: location.coordinate,
@@ -75,6 +75,7 @@ class RoutersViewModel: NSObject, MKMapViewDelegate, CLLocationManagerDelegate {
 //    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 //
 //    }
+
 }
 
 

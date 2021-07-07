@@ -42,5 +42,10 @@ class RoutersViewController: UIViewController {
 extension RoutersViewController {
     @objc func onTap(_ sender: UITapGestureRecognizer) {
         //let location = sender.location(in: view)
+        //let annotation = MKAnnotationView
+//        MKPlacemark()
+//        CLLocationCoordinate2D(
+//
+//        print(location)
     }
 }

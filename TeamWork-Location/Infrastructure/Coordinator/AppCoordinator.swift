@@ -26,7 +26,7 @@ final class AppCoordinator: CoordinatorProtocol {
     }
     
     func start() {
-        let vc = MapViewController.instantiateFromStoryboard()
+        let vc = TabBarController.instantiateFromStoryboard()
         vc.coordinator = self
         navigationController?.isNavigationBarHidden = true
         navigationController?.pushViewController(vc, animated: true)

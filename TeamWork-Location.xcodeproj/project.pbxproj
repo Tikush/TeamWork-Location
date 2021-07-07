@@ -46,6 +46,7 @@
 		D07D8D572695D94E001E81F3 /* ChosenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07D8D552695D94E001E81F3 /* ChosenCell.xib */; };
 		D07D8D592695E470001E81F3 /* ChosenMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07D8D582695E470001E81F3 /* ChosenMapsViewController.swift */; };
 		D07D8D5B2695E490001E81F3 /* ChosenMapsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07D8D5A2695E48F001E81F3 /* ChosenMapsViewController.storyboard */; };
+		D07D8D5D26966ECC001E81F3 /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07D8D5C26966ECC001E81F3 /* PinAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		D07D8D552695D94E001E81F3 /* ChosenCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChosenCell.xib; sourceTree = "<group>"; };
 		D07D8D582695E470001E81F3 /* ChosenMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenMapsViewController.swift; sourceTree = "<group>"; };
 		D07D8D5A2695E48F001E81F3 /* ChosenMapsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChosenMapsViewController.storyboard; sourceTree = "<group>"; };
+		D07D8D5C26966ECC001E81F3 /* PinAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,6 +370,7 @@
 			children = (
 				3D6875962695C50100EAD08A /* ChosenViewModel.swift */,
 				D07D8D522695D69A001E81F3 /* ChosenDataSource.swift */,
+				D07D8D5C26966ECC001E81F3 /* PinAnnotation.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				3D68759E2695CD5C00EAD08A /* TabBarController.swift in Sources */,
 				3D5674242695B9230084471A /* Country.swift in Sources */,
 				3D5673FA2695B1DC0084471A /* SceneDelegate.swift in Sources */,
+				D07D8D5D26966ECC001E81F3 /* PinAnnotation.swift in Sources */,
 				3D5674132695B5C20084471A /* SignInViewController.swift in Sources */,
 				3D6875752695BC7A00EAD08A /* CoordinatorDelegate.swift in Sources */,
 				D07D8D562695D94E001E81F3 /* ChosenCell.swift in Sources */,

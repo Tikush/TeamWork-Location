@@ -35,11 +35,10 @@ final class AppCoordinator: CoordinatorProtocol {
         window?.makeKeyAndVisible()
     }
     
-    func proceedToChosenMapsViewController() {
+    func proceedToChosenMapsViewController(with country: Country) {
         let vc = ChosenMapsViewController.instantiateFromStoryboard()
         vc.coordinator = self
-        let nc = UINavigationController(rootViewController: vc)
-        nc.isNavigationBarHidden = true
-        nc.pushViewController(vc, animated: true)
+        vc.country = country
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

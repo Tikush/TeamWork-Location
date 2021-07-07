@@ -44,7 +44,7 @@ class ChosenDataSource: NSObject, UITableViewDataSource {
 
 extension ChosenDataSource: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        viewModel.controller.coordinator?.proceedToChosenMapsViewController()
+        viewModel.controller.coordinator?.proceedToChosenMapsViewController(with: countries[indexPath.row])
 //        let vc = ChosenMapsViewController.instantiateFromStoryboard()
 //        navigationController.isNavigationBarHidden = true
 //        navigationController.pushViewController(vc, animated: true)

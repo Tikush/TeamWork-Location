@@ -50,7 +50,7 @@
         <!--ChosenCountriesViewController-->
         <scene sceneID="af0-Xg-aPq">
             <objects>
-                <viewControllerPlaceholder storyboardName="ChosenCountriesViewController" referencedIdentifier="ChosenCountriesViewController" id="cjz-z2-q6v" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="ChosenCountriesViewController" storyboardName="ChosenCountriesViewController" referencedIdentifier="ChosenCountriesViewController" id="cjz-z2-q6v" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ONk-qZ-W2R"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RxC-Yw-EdB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

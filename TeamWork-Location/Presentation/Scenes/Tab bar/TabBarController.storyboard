@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="194" y="-354"/>
         </scene>
-        <!--SignInViewController-->
+        <!--MapViewController-->
         <scene sceneID="3Wa-ex-KU6">
             <objects>
-                <viewControllerPlaceholder storyboardName="SignInViewController" referencedIdentifier="SignInViewController" id="kea-TP-Xs4" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="MapViewController" storyboardName="MapViewController" referencedIdentifier="MapViewController" id="kea-TP-Xs4" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="6Hg-kX-7bJ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJ3-Hi-PSV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

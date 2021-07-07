@@ -7,10 +7,29 @@
 
 import UIKit
 
-class ChosenCountriesViewController: UIViewController {
+class ChosenCountriesViewController: BaseViewController {
 
+    @IBOutlet weak var myTable: UITableView!
+    private var dataSource: ChosenDataSource!
+    private var viewModel: ChosenViewModelProtocol!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        myTable.register(ChosenCell.self, forCellReuseIdentifier: "ChosenCell")
+        configureViewModel()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        dataSource.refresh()
     }
 
+}
+
+extension ChosenCountriesViewController {
+    private func configureViewModel() {
+        viewModel = ChosenViewModel(with: self)
+        dataSource = ChosenDataSource(with: myTable, viewModel: viewModel)
+        dataSource.refresh()
+    }
 }

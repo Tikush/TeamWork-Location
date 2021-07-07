@@ -41,6 +41,11 @@
 		3D6875A02695CDB500EAD08A /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D68759F2695CDB500EAD08A /* TabBarController.storyboard */; };
 		3D6875A22695CFC300EAD08A /* RoutersViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6875A12695CFC300EAD08A /* RoutersViewController.storyboard */; };
 		3D6893AC2695D03700741137 /* ShareViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6893AB2695D03700741137 /* ShareViewController.storyboard */; };
+		D07D8D532695D69A001E81F3 /* ChosenDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07D8D522695D69A001E81F3 /* ChosenDataSource.swift */; };
+		D07D8D562695D94E001E81F3 /* ChosenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07D8D542695D94E001E81F3 /* ChosenCell.swift */; };
+		D07D8D572695D94E001E81F3 /* ChosenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07D8D552695D94E001E81F3 /* ChosenCell.xib */; };
+		D07D8D592695E470001E81F3 /* ChosenMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07D8D582695E470001E81F3 /* ChosenMapsViewController.swift */; };
+		D07D8D5B2695E490001E81F3 /* ChosenMapsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07D8D5A2695E48F001E81F3 /* ChosenMapsViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +85,11 @@
 		3D68759F2695CDB500EAD08A /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
 		3D6875A12695CFC300EAD08A /* RoutersViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoutersViewController.storyboard; sourceTree = "<group>"; };
 		3D6893AB2695D03700741137 /* ShareViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShareViewController.storyboard; sourceTree = "<group>"; };
+		D07D8D522695D69A001E81F3 /* ChosenDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenDataSource.swift; sourceTree = "<group>"; };
+		D07D8D542695D94E001E81F3 /* ChosenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenCell.swift; sourceTree = "<group>"; };
+		D07D8D552695D94E001E81F3 /* ChosenCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChosenCell.xib; sourceTree = "<group>"; };
+		D07D8D582695E470001E81F3 /* ChosenMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenMapsViewController.swift; sourceTree = "<group>"; };
+		D07D8D5A2695E48F001E81F3 /* ChosenMapsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChosenMapsViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,6 +355,10 @@
 			children = (
 				3D6875832695C1E000EAD08A /* ChosenCountriesViewController.swift */,
 				3D6875852695C1EF00EAD08A /* ChosenCountriesViewController.storyboard */,
+				D07D8D542695D94E001E81F3 /* ChosenCell.swift */,
+				D07D8D552695D94E001E81F3 /* ChosenCell.xib */,
+				D07D8D582695E470001E81F3 /* ChosenMapsViewController.swift */,
+				D07D8D5A2695E48F001E81F3 /* ChosenMapsViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -353,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				3D6875962695C50100EAD08A /* ChosenViewModel.swift */,
+				D07D8D522695D69A001E81F3 /* ChosenDataSource.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -440,8 +455,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D07D8D572695D94E001E81F3 /* ChosenCell.xib in Resources */,
 				2BDA412A2695DA0B005042CA /* MapViewController.storyboard in Resources */,
 				3D6875A02695CDB500EAD08A /* TabBarController.storyboard in Resources */,
+				D07D8D5B2695E490001E81F3 /* ChosenMapsViewController.storyboard in Resources */,
 				3D68757D2695C0FA00EAD08A /* MainViewController.storyboard in Resources */,
 				3D6875862695C1EF00EAD08A /* ChosenCountriesViewController.storyboard in Resources */,
 				3D68757B2695BFC400EAD08A /* SignInViewController.storyboard in Resources */,
@@ -460,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D07D8D592695E470001E81F3 /* ChosenMapsViewController.swift in Sources */,
 				3D68756F2695BB0500EAD08A /* AppCoordinator.swift in Sources */,
 				3D6875842695C1E000EAD08A /* ChosenCountriesViewController.swift in Sources */,
 				3D5674292695B9710084471A /* NetworkManager.swift in Sources */,
@@ -471,6 +489,7 @@
 				2BDA41282695D96C005042CA /* MapViewController.swift in Sources */,
 				3D6875812695C12000EAD08A /* MainViewModel.swift in Sources */,
 				3D6875972695C50100EAD08A /* ChosenViewModel.swift in Sources */,
+				D07D8D532695D69A001E81F3 /* ChosenDataSource.swift in Sources */,
 				3D6875992695C51F00EAD08A /* RoutersViewModel.swift in Sources */,
 				3D6875782695BD4600EAD08A /* BaseViewController.swift in Sources */,
 				3D5673F82695B1DC0084471A /* AppDelegate.swift in Sources */,
@@ -480,6 +499,7 @@
 				3D5673FA2695B1DC0084471A /* SceneDelegate.swift in Sources */,
 				3D5674132695B5C20084471A /* SignInViewController.swift in Sources */,
 				3D6875752695BC7A00EAD08A /* CoordinatorDelegate.swift in Sources */,
+				D07D8D562695D94E001E81F3 /* ChosenCell.swift in Sources */,
 				3D68759B2695C53400EAD08A /* RoutersViewController.swift in Sources */,
 				3D5674172695B6310084471A /* SignInViewModel.swift in Sources */,
 				3D6875732695BBC300EAD08A /* Storyboarded.swift in Sources */,

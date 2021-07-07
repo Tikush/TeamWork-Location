@@ -37,6 +37,10 @@ class RoutersViewController: UIViewController {
                                             with: CLLocationManager(),
                                             with: mapView)
     }
-    
 }
 
+extension RoutersViewController {
+    @objc func onTap(_ sender: UITapGestureRecognizer) {
+        //let location = sender.location(in: view)
+    }
+}

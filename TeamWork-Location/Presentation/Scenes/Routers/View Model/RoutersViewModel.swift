@@ -24,6 +24,7 @@ class RoutersViewModel: NSObject, MKMapViewDelegate, CLLocationManagerDelegate {
         self.mapView = mapView
         configMapView()
         configManager()
+        configGesture()
     }
     
     func configMapView() {
@@ -33,6 +34,14 @@ class RoutersViewModel: NSObject, MKMapViewDelegate, CLLocationManagerDelegate {
     
     func configManager() {
         locationManager.delegate = self
+    }
+    
+    func configGesture() {
+        let gesture = UILongPressGestureRecognizer(target: self.rootController,
+                                             action: #selector(self.rootController.onTap))
+        gesture.minimumPressDuration = 1
+        mapView.isUserInteractionEnabled = true
+        mapView.addGestureRecognizer(gesture)
     }
     
     func userLocation() {

@@ -19,10 +19,21 @@ class RoutersViewController: UIViewController {
         configViewModel()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        routersViewModel?.startUpdatingLocation()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        routersViewModel?.stopUpdatingLocation()
+    }
+    
     func configViewModel() {
         routersViewModel = RoutersViewModel(with: self,
                                             with: CLLocationManager(),
                                             with: mapView)
     }
+    
 }
 

@@ -29,7 +29,13 @@ class RoutersViewModel: NSObject, MKMapViewDelegate {
         mapView.delegate = self
     }
     
+    func startUpdatingLocation() {
+        locationManager.startUpdatingLocation()
+    }
     
+    func stopUpdatingLocation() {
+        locationManager.stopUpdatingLocation()
+    }
     
 }
 

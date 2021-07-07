@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BDA41222695D909005042CA /* SignUpViewControler.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BDA41212695D909005042CA /* SignUpViewControler.storyboard */; };
+		2BDA41242695D95E005042CA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA41232695D95E005042CA /* LocationManager.swift */; };
+		2BDA41282695D96C005042CA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA41272695D96C005042CA /* MapViewController.swift */; };
+		2BDA412A2695DA0B005042CA /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BDA41292695DA0B005042CA /* MapViewController.storyboard */; };
 		3D5673F82695B1DC0084471A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5673F72695B1DC0084471A /* AppDelegate.swift */; };
 		3D5673FA2695B1DC0084471A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5673F92695B1DC0084471A /* SceneDelegate.swift */; };
 		3D5674012695B1DD0084471A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5674002695B1DD0084471A /* Assets.xcassets */; };
@@ -40,6 +44,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BDA41212695D909005042CA /* SignUpViewControler.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewControler.storyboard; sourceTree = "<group>"; };
+		2BDA41232695D95E005042CA /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		2BDA41272695D96C005042CA /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2BDA41292695DA0B005042CA /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
 		3D5673F42695B1DC0084471A /* TeamWork-Location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TeamWork-Location.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5673F72695B1DC0084471A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D5673F92695B1DC0084471A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -184,7 +192,10 @@
 		3D5674182695B6840084471A /* View  */ = {
 			isa = PBXGroup;
 			children = (
+				2BDA41272695D96C005042CA /* MapViewController.swift */,
+				2BDA41292695DA0B005042CA /* MapViewController.storyboard */,
 				3D56741A2695B6B50084471A /* SignUpViewController.swift */,
+				2BDA41212695D909005042CA /* SignUpViewControler.storyboard */,
 			);
 			path = "View ";
 			sourceTree = "<group>";
@@ -192,6 +203,7 @@
 		3D5674192695B6A30084471A /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				2BDA41232695D95E005042CA /* LocationManager.swift */,
 				3D6875692695BA3400EAD08A /* SignUpViewModel.swift */,
 			);
 			path = "View Model";
@@ -428,12 +440,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BDA412A2695DA0B005042CA /* MapViewController.storyboard in Resources */,
 				3D6875A02695CDB500EAD08A /* TabBarController.storyboard in Resources */,
 				3D68757D2695C0FA00EAD08A /* MainViewController.storyboard in Resources */,
 				3D6875862695C1EF00EAD08A /* ChosenCountriesViewController.storyboard in Resources */,
 				3D68757B2695BFC400EAD08A /* SignInViewController.storyboard in Resources */,
 				3D6875A22695CFC300EAD08A /* RoutersViewController.storyboard in Resources */,
 				3D5674042695B1DD0084471A /* LaunchScreen.storyboard in Resources */,
+				2BDA41222695D909005042CA /* SignUpViewControler.storyboard in Resources */,
 				3D5674012695B1DD0084471A /* Assets.xcassets in Resources */,
 				3D6893AC2695D03700741137 /* ShareViewController.storyboard in Resources */,
 			);
@@ -453,6 +467,8 @@
 				3D68756D2695BABF00EAD08A /* CoordinatorProtocol.swift in Sources */,
 				3D56741B2695B6B50084471A /* SignUpViewController.swift in Sources */,
 				3D6875902695C48900EAD08A /* ShareViewModel.swift in Sources */,
+				2BDA41242695D95E005042CA /* LocationManager.swift in Sources */,
+				2BDA41282695D96C005042CA /* MapViewController.swift in Sources */,
 				3D6875812695C12000EAD08A /* MainViewModel.swift in Sources */,
 				3D6875972695C50100EAD08A /* ChosenViewModel.swift in Sources */,
 				3D6875992695C51F00EAD08A /* RoutersViewModel.swift in Sources */,

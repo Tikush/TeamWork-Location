@@ -15,13 +15,40 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WG1-SD-kkr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="762"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjS-yH-cYJ">
+                                <rect key="frame" x="24" y="808" width="366" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="DXj-pI-4ov"/>
+                                </constraints>
+                                <state key="normal" title="Share Location"/>
+                                <connections>
+                                    <action selector="shareLocation:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ibT-Bt-IXz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hjS-yH-cYJ" secondAttribute="trailing" constant="24" id="2Im-Rt-jWA"/>
+                            <constraint firstItem="hjS-yH-cYJ" firstAttribute="top" secondItem="WG1-SD-kkr" secondAttribute="bottom" constant="2" id="3is-fB-ROt"/>
+                            <constraint firstItem="hjS-yH-cYJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="8mj-1O-YUl"/>
+                            <constraint firstItem="WG1-SD-kkr" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="PXA-Im-8VM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="hjS-yH-cYJ" secondAttribute="bottom" id="Tho-oS-lTR"/>
+                            <constraint firstItem="WG1-SD-kkr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="nPo-f9-ZWT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="WG1-SD-kkr" secondAttribute="trailing" id="sOf-pa-3mA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="WG1-SD-kkr" id="wun-UL-LWY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="80" y="126"/>
+            <point key="canvasLocation" x="276.81159420289856" y="120.53571428571428"/>
         </scene>
     </scenes>
     <resources>

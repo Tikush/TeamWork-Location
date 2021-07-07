@@ -21,12 +21,14 @@ class RoutersViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        routersViewModel?.startUpdatingLocation()
+        routersViewModel?.userLocation()
+        print("Did Appear")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         routersViewModel?.stopUpdatingLocation()
+        print("will dissappear")
     }
     
     func configViewModel() {

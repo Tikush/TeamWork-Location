@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 import MapKit
 
-class RoutersViewModel: NSObject, MKMapViewDelegate {
+class RoutersViewModel: NSObject, MKMapViewDelegate, CLLocationManagerDelegate {
     
     private var globalLocations: [CLLocationCoordinate2D] = []
     var locationManager: CLLocationManager!
@@ -23,10 +23,23 @@ class RoutersViewModel: NSObject, MKMapViewDelegate {
         self.rootController = rootController
         self.mapView = mapView
         configMapView()
+        configManager()
     }
     
     func configMapView() {
         mapView.delegate = self
+        mapView.showsUserLocation = true
+    }
+    
+    func configManager() {
+        locationManager.delegate = self
+    }
+    
+    func userLocation() {
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.distanceFilter = kCLDistanceFilterNone
+        locationManager.startUpdatingLocation()
     }
     
     func startUpdatingLocation() {
@@ -37,6 +50,9 @@ class RoutersViewModel: NSObject, MKMapViewDelegate {
         locationManager.stopUpdatingLocation()
     }
     
+//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//
+//    }
 }
 
 

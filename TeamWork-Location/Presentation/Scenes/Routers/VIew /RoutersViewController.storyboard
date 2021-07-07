@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Routers View Controller-->
+        <!--Item-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="RoutersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="RoutersViewController" customModule="TeamWork_Location" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,6 +29,8 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aVu-UZ-JPe" secondAttribute="trailing" id="f9h-Fe-Gtf"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Hyv-VP-cfw"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="aVu-UZ-JPe" id="EUI-4w-D8h"/>
                     </connections>

@@ -47,9 +47,9 @@ final class AppCoordinator: CoordinatorProtocol {
         let vc = MainPageMapViewController.instantiateFromStoryboard()
         vc.coordinator = self
 //        vc.countries = countries
-        
-        let nc = UINavigationController(rootViewController: vc)
-        nc.isNavigationBarHidden = true
-        nc.pushViewController(vc, animated: true)
+//        let nc = UINavigationController(rootViewController: vc)
+//        nc.isNavigationBarHidden = true
+//        nc.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

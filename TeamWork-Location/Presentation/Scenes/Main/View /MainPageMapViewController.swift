@@ -21,17 +21,15 @@ class MainPageMapViewController: BaseViewController, MKMapViewDelegate {
         
         print(countries.count)
         
-        let anotation = MKPointAnnotation()
-        anotation.coordinate = CLLocationCoordinate2D(latitude: 40,
-                                                      longitude: 45)
-        let anotation2 = MKPointAnnotation()
-        anotation.coordinate = CLLocationCoordinate2D(latitude: 24.25,
-                                                      longitude: -76)
-        let anotation3 = MKPointAnnotation()
-        anotation.coordinate = CLLocationCoordinate2D(latitude: 53,
-                                                      longitude: 28)
-        
-//        mapView.addAnnotations(pins[0].latlng)
-
+        anotations(countries)
+    }
+    
+    func anotations(_ array: [MainViewModel]) {
+        for country in countries {
+            let anotation = MKPointAnnotation()
+            anotation.coordinate = CLLocationCoordinate2D( latitude: country.latlng[0],
+                                                           longitude: country.latlng[1])
+            mapView.addAnnotation(anotation)
+        }
     }
 }

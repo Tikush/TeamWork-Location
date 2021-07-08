@@ -6,22 +6,28 @@
 //
 
 import UIKit
+protocol CountriesDataSourceDelegate {
+    func proceedTo()
+}
 
 class CountriesDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
     
     private var tableView: UITableView!
     private var viewModel: CountriesListViewModelProtocol!
     private var countriesList = [MainViewModel]()
+    private var coordinator: CoordinatorProtocol!
     
     private var countries: [MainViewModel] = []
     
-    init(with tableView: UITableView, viewModel: CountriesListViewModelProtocol) {
+    init(with tableView: UITableView, coordinator: CoordinatorProtocol, countries: [MainViewModel], viewModel: CountriesListViewModelProtocol) {
         super.init()
         
         self.tableView = tableView
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.viewModel = viewModel
+        self.countries = countries
+        self.coordinator = coordinator
     }
 
     func refresh() {
@@ -49,9 +55,11 @@ class CountriesDataSource: NSObject, UITableViewDataSource, UITableViewDelegate 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         countries.append(countriesList[indexPath.row])
-        
-        let sb = UIStoryboard(name: "MainPageMapViewController", bundle: nil)
-        let vc = sb.instantiateViewController(identifier: "MainPageMapViewController") as! MainPageMapViewController
-        vc.countries = countries
+    }
+}
+
+extension CountriesDataSource: CountriesDataSourceDelegate {
+    func proceedTo() {
+        coordinator.proceedToMainPageMapViewController(countries: countries)
     }
 }

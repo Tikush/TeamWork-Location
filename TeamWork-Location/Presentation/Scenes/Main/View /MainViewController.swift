@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class MainViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -27,8 +28,7 @@ class MainViewController: BaseViewController {
     }
     
     @IBAction func onToMapBtn(_ sender: Any) {
-        print("tapped")
-        coordinator?.proceedToMainPageMapViewController()
+        dataSource.proceedTo()
     }
     
     private func setupLayout() {
@@ -39,6 +39,8 @@ class MainViewController: BaseViewController {
         countriesManager = CountriesManager()
         viewModel = CountriesListViewModel(with: countriesManager)
         dataSource = CountriesDataSource(with: tableView,
+                                         coordinator: coordinator!,
+                                         countries: countries,
                                          viewModel: viewModel)
         dataSource.refresh()
     }

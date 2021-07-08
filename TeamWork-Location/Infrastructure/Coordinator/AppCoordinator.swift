@@ -43,13 +43,10 @@ final class AppCoordinator: CoordinatorProtocol {
         nc.pushViewController(vc, animated: true)
     }
     
-    func proceedToMainPageMapViewController() {
+    func proceedToMainPageMapViewController(countries: [MainViewModel]) {
         let vc = MainPageMapViewController.instantiateFromStoryboard()
         vc.coordinator = self
-//        vc.countries = countries
-//        let nc = UINavigationController(rootViewController: vc)
-//        nc.isNavigationBarHidden = true
-//        nc.pushViewController(vc, animated: true)
+        vc.countries = countries
         navigationController?.pushViewController(vc, animated: true)
     }
 }

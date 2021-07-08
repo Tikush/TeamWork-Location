@@ -41,5 +41,13 @@ class CountriesDataSource: NSObject, UITableViewDataSource, UITableViewDelegate 
         cell.configure(with: countriesList[indexPath.row])
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        70
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("test")
+    }
 }
 

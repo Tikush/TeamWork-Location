@@ -42,4 +42,12 @@ final class AppCoordinator: CoordinatorProtocol {
         nc.isNavigationBarHidden = true
         nc.pushViewController(vc, animated: true)
     }
+    
+    func proceedToMainPageMapViewController() {
+        let vc = MainPageMapViewController.instantiateFromStoryboard()
+        vc.coordinator = self
+        let nc = UINavigationController(rootViewController: vc)
+        nc.isNavigationBarHidden = true
+        nc.pushViewController(vc, animated: true)
+    }
 }

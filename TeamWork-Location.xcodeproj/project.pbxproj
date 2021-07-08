@@ -46,6 +46,8 @@
 		AB8E4AD32696FCBC0020AD46 /* CountriesDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E4AD22696FCBC0020AD46 /* CountriesDataSourse.swift */; };
 		AB8E4AD62696FD7D0020AD46 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E4AD42696FD7D0020AD46 /* CountryTableViewCell.swift */; };
 		AB8E4AD72696FD7D0020AD46 /* CountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8E4AD52696FD7D0020AD46 /* CountryTableViewCell.xib */; };
+		AB8E4AD92697062C0020AD46 /* MainPageMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E4AD82697062C0020AD46 /* MainPageMapViewController.swift */; };
+		AB8E4ADB269706380020AD46 /* MainPageMapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8E4ADA269706380020AD46 /* MainPageMapViewController.storyboard */; };
 		D07D8D532695D69A001E81F3 /* ChosenDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07D8D522695D69A001E81F3 /* ChosenDataSource.swift */; };
 		D07D8D562695D94E001E81F3 /* ChosenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07D8D542695D94E001E81F3 /* ChosenCell.swift */; };
 		D07D8D572695D94E001E81F3 /* ChosenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07D8D552695D94E001E81F3 /* ChosenCell.xib */; };
@@ -95,6 +97,8 @@
 		AB8E4AD22696FCBC0020AD46 /* CountriesDataSourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesDataSourse.swift; sourceTree = "<group>"; };
 		AB8E4AD42696FD7D0020AD46 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		AB8E4AD52696FD7D0020AD46 /* CountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableViewCell.xib; sourceTree = "<group>"; };
+		AB8E4AD82697062C0020AD46 /* MainPageMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageMapViewController.swift; sourceTree = "<group>"; };
+		AB8E4ADA269706380020AD46 /* MainPageMapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainPageMapViewController.storyboard; sourceTree = "<group>"; };
 		D07D8D522695D69A001E81F3 /* ChosenDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenDataSource.swift; sourceTree = "<group>"; };
 		D07D8D542695D94E001E81F3 /* ChosenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenCell.swift; sourceTree = "<group>"; };
 		D07D8D552695D94E001E81F3 /* ChosenCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChosenCell.xib; sourceTree = "<group>"; };
@@ -245,6 +249,8 @@
 				3D68757E2695C11100EAD08A /* MainViewController.swift */,
 				AB8E4AD42696FD7D0020AD46 /* CountryTableViewCell.swift */,
 				AB8E4AD52696FD7D0020AD46 /* CountryTableViewCell.xib */,
+				AB8E4AD82697062C0020AD46 /* MainPageMapViewController.swift */,
+				AB8E4ADA269706380020AD46 /* MainPageMapViewController.storyboard */,
 			);
 			path = "View ";
 			sourceTree = "<group>";
@@ -474,6 +480,7 @@
 				2BDA412A2695DA0B005042CA /* MapViewController.storyboard in Resources */,
 				3D6875A02695CDB500EAD08A /* TabBarController.storyboard in Resources */,
 				D07D8D5B2695E490001E81F3 /* ChosenMapsViewController.storyboard in Resources */,
+				AB8E4ADB269706380020AD46 /* MainPageMapViewController.storyboard in Resources */,
 				3D68757D2695C0FA00EAD08A /* MainViewController.storyboard in Resources */,
 				3D6875862695C1EF00EAD08A /* ChosenCountriesViewController.storyboard in Resources */,
 				3D68757B2695BFC400EAD08A /* SignInViewController.storyboard in Resources */,
@@ -518,6 +525,7 @@
 				3D5673FA2695B1DC0084471A /* SceneDelegate.swift in Sources */,
 				3D5674132695B5C20084471A /* SignInViewController.swift in Sources */,
 				3D6875752695BC7A00EAD08A /* CoordinatorDelegate.swift in Sources */,
+				AB8E4AD92697062C0020AD46 /* MainPageMapViewController.swift in Sources */,
 				D07D8D562695D94E001E81F3 /* ChosenCell.swift in Sources */,
 				3D68759B2695C53400EAD08A /* RoutersViewController.swift in Sources */,
 				AB8E4ACF2696F8710020AD46 /* CountriesManager.swift in Sources */,

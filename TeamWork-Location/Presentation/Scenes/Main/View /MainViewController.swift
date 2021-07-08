@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,6 +19,10 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         setupLayout()
         configureViewModel()
+    }
+    
+    @IBAction func onToMapBtn(_ sender: Any) {
+        coordinator?.proceedToMainPageMapViewController()
     }
     
     private func setupLayout() {

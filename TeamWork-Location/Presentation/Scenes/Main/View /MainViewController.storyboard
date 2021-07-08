@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Main-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="MainViewController" customModule="TeamWork_Location" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,26 +17,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jn9-Kf-BXD">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="84" width="414" height="729"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6L-EG-JGI">
+                                <rect key="frame" x="347" y="49" width="47" height="30"/>
+                                <state key="normal" title="ToMap">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onToMapBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="imL-Qd-wWP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="jn9-Kf-BXD" firstAttribute="top" secondItem="E6L-EG-JGI" secondAttribute="bottom" constant="5" id="2OD-Ys-rL1"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jn9-Kf-BXD" secondAttribute="trailing" id="42n-wa-LnR"/>
-                            <constraint firstItem="jn9-Kf-BXD" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ClZ-iC-5lB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="E6L-EG-JGI" secondAttribute="trailing" constant="20" id="7SO-eX-jNE"/>
+                            <constraint firstItem="jn9-Kf-BXD" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="ClZ-iC-5lB"/>
                             <constraint firstItem="jn9-Kf-BXD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Hpa-fA-Pk6"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="jn9-Kf-BXD" secondAttribute="bottom" id="d8c-M6-Kk6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uaP-ef-ur0">
-                        <barButtonItem key="rightBarButtonItem" title="To Map" id="asy-Im-xtB">
-                            <connections>
-                                <action selector="onToMap:" destination="Y6W-OH-hqX" id="1aM-64-xz0"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <tabBarItem key="tabBarItem" title="Main" image="list.dash" catalog="system" id="Zlh-HJ-vLy"/>
+                    <navigationItem key="navigationItem" id="uaP-ef-ur0"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="jn9-Kf-BXD" id="H2j-qP-dYA"/>
                     </connections>
@@ -45,26 +52,9 @@
             </objects>
             <point key="canvasLocation" x="989.85507246376824" y="125.89285714285714"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="hMp-g8-BW2">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ESk-iJ-7bW" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9ND-IX-p3f">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="Nwq-vg-6mB"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KdB-iI-nH3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="79.710144927536234" y="125.89285714285714"/>
-        </scene>
     </scenes>
     <resources>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

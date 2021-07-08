@@ -15,4 +15,5 @@ protocol CoordinatorProtocol: AnyObject {
     
     func start()
     func proceedToChosenMapsViewController()
+    func proceedToMainPageMapViewController()
 }

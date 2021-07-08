@@ -15,9 +15,23 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fAo-2b-G4k">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fAo-2b-G4k" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="8ci-fT-4Pj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fAo-2b-G4k" secondAttribute="trailing" id="eOD-za-yId"/>
+                            <constraint firstItem="fAo-2b-G4k" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="qdH-uC-0N5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="fAo-2b-G4k" secondAttribute="bottom" id="xig-X3-Og4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="fAo-2b-G4k" id="9uA-Ci-z9c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

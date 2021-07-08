@@ -14,14 +14,20 @@ class MainViewController: BaseViewController {
     private var viewModel: CountriesListViewModelProtocol!
     private var dataSource: CountriesDataSource!
     private var countriesManager: CountriesManagerProtocol!
+    
+    private var countries: [MainViewModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
         configureViewModel()
+        
+        tableView.allowsMultipleSelection = true
+        tableView.allowsMultipleSelectionDuringEditing = true
     }
     
     @IBAction func onToMapBtn(_ sender: Any) {
+        print("tapped")
         coordinator?.proceedToMainPageMapViewController()
     }
     

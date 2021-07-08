@@ -12,7 +12,8 @@ class CountriesDataSource: NSObject, UITableViewDataSource, UITableViewDelegate 
     private var tableView: UITableView!
     private var viewModel: CountriesListViewModelProtocol!
     private var countriesList = [MainViewModel]()
-    private var filteredCountriesList = [MainViewModel]()
+    
+    private var countries: [MainViewModel] = []
     
     init(with tableView: UITableView, viewModel: CountriesListViewModelProtocol) {
         super.init()
@@ -47,7 +48,10 @@ class CountriesDataSource: NSObject, UITableViewDataSource, UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("test")
+        countries.append(countriesList[indexPath.row])
+        
+        let sb = UIStoryboard(name: "MainPageMapViewController", bundle: nil)
+        let vc = sb.instantiateViewController(identifier: "MainPageMapViewController") as! MainPageMapViewController
+        vc.countries = countries
     }
 }
-

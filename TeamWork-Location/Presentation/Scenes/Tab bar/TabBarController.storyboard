@@ -40,7 +40,7 @@
         <!--MainViewController-->
         <scene sceneID="GHR-Zm-JhC">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MainViewController" storyboardName="MainViewController" referencedIdentifier="MainViewController" id="4A5-S1-O5T" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="MainPageMapViewController" storyboardName="MainViewController" referencedIdentifier="MainViewController" id="4A5-S1-O5T" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="YNZ-PW-krP"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fW3-kO-fIg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -31,6 +31,6 @@ final class NetworkManager: NetworkManagerProtocl {
             } catch {
                 completion(.failure(error))
             }
-        }
+        }.resume()
     }
 }

@@ -13,6 +13,8 @@ protocol NetworkManagerProtocl: AnyObject {
 
 final class NetworkManager: NetworkManagerProtocl {
     
+    static let shared = NetworkManager()
+    
     func get<T: Codable>(with url: String, completion: @escaping ((Result<T, Error>) -> Void)) {
         guard let url = URL(string: url) else {return}
         

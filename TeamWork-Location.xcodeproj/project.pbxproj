@@ -41,6 +41,7 @@
 		3D6875A02695CDB500EAD08A /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D68759F2695CDB500EAD08A /* TabBarController.storyboard */; };
 		3D6875A22695CFC300EAD08A /* RoutersViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6875A12695CFC300EAD08A /* RoutersViewController.storyboard */; };
 		3D6893AC2695D03700741137 /* ShareViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6893AB2695D03700741137 /* ShareViewController.storyboard */; };
+		AB8E4ACF2696F8710020AD46 /* CountriesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E4ACE2696F8710020AD46 /* CountriesManager.swift */; };
 		D07D8D532695D69A001E81F3 /* ChosenDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07D8D522695D69A001E81F3 /* ChosenDataSource.swift */; };
 		D07D8D562695D94E001E81F3 /* ChosenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07D8D542695D94E001E81F3 /* ChosenCell.swift */; };
 		D07D8D572695D94E001E81F3 /* ChosenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07D8D552695D94E001E81F3 /* ChosenCell.xib */; };
@@ -85,6 +86,7 @@
 		3D68759F2695CDB500EAD08A /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
 		3D6875A12695CFC300EAD08A /* RoutersViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoutersViewController.storyboard; sourceTree = "<group>"; };
 		3D6893AB2695D03700741137 /* ShareViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShareViewController.storyboard; sourceTree = "<group>"; };
+		AB8E4ACE2696F8710020AD46 /* CountriesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesManager.swift; sourceTree = "<group>"; };
 		D07D8D522695D69A001E81F3 /* ChosenDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenDataSource.swift; sourceTree = "<group>"; };
 		D07D8D542695D94E001E81F3 /* ChosenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenCell.swift; sourceTree = "<group>"; };
 		D07D8D552695D94E001E81F3 /* ChosenCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChosenCell.xib; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				3D5674282695B9710084471A /* NetworkManager.swift */,
+				AB8E4ACE2696F8710020AD46 /* CountriesManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 				3D6875752695BC7A00EAD08A /* CoordinatorDelegate.swift in Sources */,
 				D07D8D562695D94E001E81F3 /* ChosenCell.swift in Sources */,
 				3D68759B2695C53400EAD08A /* RoutersViewController.swift in Sources */,
+				AB8E4ACF2696F8710020AD46 /* CountriesManager.swift in Sources */,
 				3D5674172695B6310084471A /* SignInViewModel.swift in Sources */,
 				3D6875732695BBC300EAD08A /* Storyboarded.swift in Sources */,
 				3D68758E2695C42400EAD08A /* ShareViewController.swift in Sources */,
